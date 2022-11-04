@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiamshi-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5961105f4a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Hima.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h3>Hi, I'm <span>Himanshi</span> Yadav</h3>
+                <p> UI/UX Designer <br> Intern at MedTech IIT Kanpur <br> Embedded C Learner <br> Innovator in SIIC -IIT Kanpur <br>
+                    Internship trainee in DMSRDE Lab of DRDO</p>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora earum ex, id rem quaerat
+                        provident, inventore quis fugit a accusamus sunt voluptate neque maxime! Ducimus in nobis nemo
+                        perspiciatis animi quo tempora, obcaecati dolorum quia illo provident quod reiciendis amet?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li> <span>B.TECH</span><br> DR. A.I.T.H, Kanpur - 75% </li>
+                            <li> <span>12th </span><br> B.N.S.D Siksha Niketan - 87%</li>
+                            <li> <span>10th</span><br> B.N.S.D Siksha Niketan - 91%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Language</span><br>C/C++</li>
+                            <li><span>Development</span><br>Frontend Web Development</li>
+                            <li><span>Technology</span><br>IOT</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span>DRDO(KANPUR)</span><br> Trainee - Defence Materials & Store Research &
+                                Development Establishment (DMSRDE) Lab of DRDO
+                                11/2021 - 01/2022 </li>
+                            <li> <span>MedTech (IIT KANPUR) </span><br> Research and development Intern</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div>
+                    <h3> Measurement of Electromagnetic Properties of Materials at Microwave Frequencies" & "Weather
+                        Detection Module using Arduino</h3>
+                    <p>This weather detecting kit is used for checking temperature and humidity of lab/room .It is
+                        beneficial for soldiers fighting in the defence -field.</p>
+                </div>
+                <div>
+                    <h3>A Smart Health Monitoring System using GSM Technology</h3>
+                    <p>This health monitoring system is very useful which is used to monitor the health paramters of the
+                        patient.This system continuously monitors the temperature and heart -beat.We use Arduino for
+                        controlling GSM Module and send the patient condition on mobile phn of patient family
+                        member/well wishers or doctors .It is beneficial for updating the patient's health condition ,if
+                        you are far away from patient and reduces health care cost & time.</p>
+                </div>
+                <div>
+                    <h3>Wifi Module Based Wheel-Chair Control Using Arduino</h3>
+                    <p>This project was developed keeping in the mind the people who are unable to walk on their
+                        own.Wifi controlled wheel chair which is easy to move and easy to control as it can be accessed
+                        by moblie phn or any other electronic devices which can connected by the wifi network.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>himanshiyadav4g@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91-9369887219</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/himanshi-yadav-8705091b8/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/images/new himanshi.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your name" required >
+                    <input type="email" name="Email" placeholder="Your Email" required >
+                    <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ himanshi-yadav-8705091b8. </p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+</body>
+
+</html>
